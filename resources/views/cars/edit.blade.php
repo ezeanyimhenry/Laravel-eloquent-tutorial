@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('section')
-    <div class="m-auto">
+    <div class="container">
         <div class="text-center">
             <h1 class="">
                 Update Car
             </h1>
         </div>
 
-        <div class="text-center padding-top-20">
+        <div class="p-5">
            <form action="/cars/{{ $car->id }}" method="POST" class="form">
             @csrf
             @method('PUT')

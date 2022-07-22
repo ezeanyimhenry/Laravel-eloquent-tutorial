@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('section')
-    <div class="m-auto">
+    <div class="container">
         <div class="text-center">
             <h1 class="">
                 Create Car
             </h1>
         </div>
 
-        <div class="text-center padding-top-20">
+        <div class="p-5">
            <form action="/cars" method="POST" class="form">
             @csrf
             <div class="form-group">

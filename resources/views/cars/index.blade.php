@@ -4,18 +4,18 @@
     <div class="container">
         <div class="text-center">
             <h1 class="">
-                Cars
+                CARS
             </h1>
         </div>
 
-        <div>
+        <div class="col-12 mb-4">
             <a href="cars/create" class="btn btn-primary">Add a new car &rarr;</a>
         </div>
 
         <div>
             @foreach ($cars as $car)
-            <div class="card">
-                <div class="float-ight">
+            <div class=" mb-3 col-12">
+                <div class="float-end">
                     <a href="cars/{{ $car->id }}/edit" class="btn btn-primary">Edit &rarr;</a>
                 </div>
                 <span>
