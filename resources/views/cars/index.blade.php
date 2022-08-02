@@ -17,6 +17,11 @@
             <div class=" mb-3 col-12">
                 <div class="float-end">
                     <a href="cars/{{ $car->id }}/edit" class="btn btn-primary">Edit &rarr;</a>
+                    <form action="cars/{{ $car->id }}" method="POST" class="mt-2">
+                        @csrf
+                        @method('delete')
+                        <button class="btn btn-danger">Delete &rarr;</button>
+                    </form>
                 </div>
                 <span>
                     Founder: {{ $car->founded }}
